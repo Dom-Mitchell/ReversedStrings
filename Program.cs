@@ -1,12 +1,24 @@
 ﻿using System;
+using System.Linq;
 
 namespace ReversedStrings
 {
-  class Program
-  {
-    static void Main(string[] args)
+    public static class Kata
     {
-      Console.WriteLine("Welcome to C#");
+        public static string Solution(string str)
+        {
+            // throw new NotImplementedException("TODO: Kata.Solution(string) => string");
+            return string.Join("", str.Reverse().ToArray());
+        }
     }
-  }
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            // Console.WriteLine("Welcome to C#");
+
+            Console.WriteLine(Kata.Solution("dom"));
+        }
+    }
 }
